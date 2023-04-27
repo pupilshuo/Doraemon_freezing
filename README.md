@@ -175,5 +175,3 @@ CUDA_VISIBLE_DEVICES=0 nohup deepspeed --master_port 5555 finetuning_freeze.py -
 
 ### 文本分类
 待补充
-#   D o r a e m o n _ f r e e z i n g  
- 
