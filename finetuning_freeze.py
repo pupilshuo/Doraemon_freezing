@@ -38,7 +38,7 @@ def print_trainable_parameters(model):
 def set_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--train_path', default='data/spo_0.json', type=str, help='')
-    parser.add_argument('--model_dir', default="../chatglm-6b", type=str, help='')
+    parser.add_argument('--model_dir', default="THUDM/ChatGLM-6B", type=str, help='')
     parser.add_argument('--num_train_epochs', default=5, type=int, help='')
     parser.add_argument('--train_batch_size', default=2, type=int, help='')
     parser.add_argument('--gradient_accumulation_steps', default=1, type=int, help='')
