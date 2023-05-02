@@ -171,7 +171,9 @@ CUDA_VISIBLE_DEVICES=0 nohup deepspeed --master_port 5555 finetuning_freeze.py -
 | 分数 | 51.75 | 73.75 | 87.75 | 79.25 | 86.75 |
 
 
-
-
-### 文本分类
-待补充
+### 
+```
+pip install huggingface_hub
+from huggingface_hub import snapshot_download
+snapshot_download(repo_id="THUDM/chatglm-6b", allow_patterns=["*.md", "*.json"], cache_dir='./chatglm-6b')
+```
