@@ -1,4 +1,9 @@
-
+### 下载模型
+```
+pip install huggingface_hub
+from huggingface_hub import snapshot_download
+snapshot_download(repo_id="THUDM/chatglm-6b",  cache_dir='./chatglm-6b')
+```
 ## ChatGLM微调
 本项目主要针对ChatGLM模型进行不同方式的微调，并对比大模型在不同微调方法上的效果，主要针对信息抽取任务、生成任务、分类任务等。
 
@@ -171,9 +176,4 @@ CUDA_VISIBLE_DEVICES=0 nohup deepspeed --master_port 5555 finetuning_freeze.py -
 | 分数 | 51.75 | 73.75 | 87.75 | 79.25 | 86.75 |
 
 
-### 
-```
-pip install huggingface_hub
-from huggingface_hub import snapshot_download
-snapshot_download(repo_id="THUDM/chatglm-6b",  cache_dir='./chatglm-6b')
-```
+
