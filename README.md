@@ -175,5 +175,5 @@ CUDA_VISIBLE_DEVICES=0 nohup deepspeed --master_port 5555 finetuning_freeze.py -
 ```
 pip install huggingface_hub
 from huggingface_hub import snapshot_download
-snapshot_download(repo_id="THUDM/chatglm-6b", allow_patterns=["*.md", "*.json"], cache_dir='./chatglm-6b')
+snapshot_download(repo_id="THUDM/chatglm-6b",  cache_dir='./chatglm-6b')
 ```
